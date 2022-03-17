@@ -2,8 +2,6 @@ import type { NextPage } from 'next';
 
 import Head from 'next/head';
 import { Navbar } from '../components/ui';
-import { useRouter } from 'next/router';
-
 type Props = {
 	title?: string;
 };
@@ -11,8 +9,6 @@ type Props = {
 const origin = typeof window !== 'undefined' && window.location.origin ? window.location.origin : '';
 
 export const Layout: NextPage<Props> = ({ children, title }) => {
-	console.log(origin);
-
 	return (
 		<>
 			<Head>
